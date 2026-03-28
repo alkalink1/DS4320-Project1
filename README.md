@@ -14,7 +14,7 @@ Data: Link
 
 Pipeline: Link
 
-License
+[MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE)
 
 ## Problem Definition
 **General Problem:**

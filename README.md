@@ -1,18 +1,18 @@
 # DS 4320 Project 1: Predicting NCAA Women’s Basketball Tournament Outcomes
 
-Executive Summary: 
+**Executive Summary:**
 
-Alka Link
+This project predicts outcomes of women’s NCAA tournament basketball games using regular season performance metrics and tournament seeding. By combining historical game data with engineered features such as scoring differentials and win percentage, the model identifies key factors that influence tournament success. The goal is to demonstrate how data-driven insights can support competitive strategy and decision-making in sports.
 
-eju2pk
+Alka Link - eju2pk
 
 DOI
 
-Press Release: Link
+[Press Release] Link
 
-Data: Link
+[Data] Link
 
-Pipeline: Link
+[Pipeline] Link
 
 [MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE)
 

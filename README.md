@@ -78,7 +78,9 @@ There is also potential historical bias because data from different seasons may 
 
 ## Metadata
 **Schema:** 
-![image.png](<img width="378" height="378" alt="image" src="https://github.com/user-attachments/assets/bffcdd52-2f48-4653-a06c-ea175e77adb3" />)
+![schemaproject1](https://github.com/user-attachments/assets/cc1a35ac-4b99-41fd-bd85-252c49e2cf18)
+
+
 
 **Data:**
 

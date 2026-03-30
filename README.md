@@ -54,7 +54,7 @@ Headline of Press Release: Link
 
 This project operates within the field of sports analytics, which focuses on using data to better understand athletic performance and predict future outcomes. In college basketball, large amounts of historical data are available describing game results, team statistics, and tournament performance. Analysts use these datasets to evaluate team strength, identify performance trends, and estimate the probability that a team will win a future game. Predictive modeling is widely used in this domain, especially during the NCAA tournament, where analysts and fans attempt to forecast game results and complete tournament brackets. By analyzing historical NCAA basketball game data, this project explores how statistical patterns in past games can help predict the outcomes of future matchups.
 
-[**Background Reading:**](https://drive.google.com/drive/folders/1uIVhi2nscfBkFiEnZXBqhxjzBJeIWFBy?usp=sharing)
+[**Background Reading**](https://drive.google.com/drive/folders/1uIVhi2nscfBkFiEnZXBqhxjzBJeIWFBy?usp=sharing)
 
 **Table of Readings:** 
 | Title                                                                                     | Description                                                                                                              | File                                                                 |
@@ -96,8 +96,6 @@ There is also potential historical bias because data from different seasons may 
 
 ## Metadata
 **Schema:** 
-![schemaproject1](https://github.com/user-attachments/assets/cc1a35ac-4b99-41fd-bd85-252c49e2cf18)
-
 
 
 **Data:**

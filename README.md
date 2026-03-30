@@ -49,14 +49,14 @@ Table of Readings:
 
 ## Data Creation
 
-Provenance: 
+**Provenance:** 
 
 For this project, I used the Kaggle Women’s NCAA Basketball dataset to build a predictive dataset for tournament game outcomes. My project goal is to predict whether a team wins an NCAA tournament game using historical performance data, so I selected files that contain regular season results, tournament results, and tournament seed information. Specifically, I used WRegularSeasonDetailedResults.csv for regular season team performance, WNCAATourneyCompactResults.csv for tournament matchups and outcomes, and WNCAATourneySeeds.csv for tournament seed information. This dataset choice matches the project objective of predicting NCAA basketball game outcomes using historical team statistics.
 
 To create the final modeling dataset, I first computed team-level regular season statistics by season. I calculated each team’s average score using both games they won and games they lost, then combined those into a single average scoring feature. I also calculated each team’s win percentage from regular season wins and losses. Next, I extracted each team’s tournament seed and converted the seed code into a numeric seed value. After that, I created a matchup-level tournament dataset by taking each NCAA tournament game and representing it from both team perspectives: one row where Team1 is the winner and one row where Team1 is the loser. This created a balanced binary outcome variable called Win. Finally, I merged team-level features into each matchup for Team1 and Team2 and engineered difference-based features (ScoreDiff, WinPctDiff, and SeedDiff) so the model could learn relative team strength rather than raw team values. The final dataset is therefore game-level, prediction-oriented, and constructed entirely from pre-game information, avoiding data leakage.
 
 
-Code to create data: 
+**Code to create data:** 
 
 | File Name                         | Description                                                                                                                                                                              | Link                |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
@@ -65,31 +65,61 @@ Code to create data:
 | WNCAATourneyCompactResults.csv    | Raw NCAA tournament results used to build matchup-level target data                                                                                                                      | [Local/Kaggle file](https://www.kaggle.com/competitions/march-machine-learning-mania-2026/data?inquiry-id=inq_nP8ZBe1wnwQZXjGDRx2xgjp4iY7Y&reference-id=25013496&subject=25013496&status=approved&fields%5Bname-first%5D%5Btype%5D=string&fields%5Bname-first%5D%5Bvalue%5D=&fields%5Bname-middle%5D%5Btype%5D=string&fields%5Bname-middle%5D%5Bvalue%5D=&fields%5Bname-last%5D%5Btype%5D=string&fields%5Bname-last%5D%5Bvalue%5D=&fields%5Baddress-street-1%5D%5Btype%5D=string&fields%5Baddress-street-1%5D%5Bvalue%5D=&fields%5Baddress-street-2%5D%5Btype%5D=string&fields%5Baddress-street-2%5D%5Bvalue%5D=&fields%5Baddress-city%5D%5Btype%5D=string&fields%5Baddress-city%5D%5Bvalue%5D=&fields%5Baddress-subdivision%5D%5Btype%5D=string&fields%5Baddress-subdivision%5D%5Bvalue%5D=&fields%5Baddress-postal-code%5D%5Btype%5D=string&fields%5Baddress-postal-code%5D%5Bvalue%5D=&fields%5Baddress-country-code%5D%5Btype%5D=string&fields%5Baddress-country-code%5D%5Bvalue%5D=&fields%5Bbirthdate%5D%5Btype%5D=date&fields%5Bbirthdate%5D%5Bvalue%5D=&fields%5Bemail-address%5D%5Btype%5D=string&fields%5Bemail-address%5D%5Bvalue%5D=&fields%5Bphone-number%5D%5Btype%5D=string&fields%5Bphone-number%5D%5Bvalue%5D=%2B18043320874&fields%5Bidentification-number%5D%5Btype%5D=string&fields%5Bidentification-number%5D%5Bvalue%5D=&fields%5Bidentification-class%5D%5Btype%5D=string&fields%5Bidentification-class%5D%5Bvalue%5D=&fields%5Bselected-country-code%5D%5Btype%5D=string&fields%5Bselected-country-code%5D%5Bvalue%5D=US&fields%5Bphone%5D%5Btype%5D=string&fields%5Bphone%5D%5Bvalue%5D=&select=WNCAATourneyCompactResults.csv)   |
 | WNCAATourneySeeds.csv             | Raw tournament seed data used to create numeric seed features                                                                                                                            | [Local/Kaggle file](https://www.kaggle.com/competitions/march-machine-learning-mania-2026/data?inquiry-id=inq_nP8ZBe1wnwQZXjGDRx2xgjp4iY7Y&reference-id=25013496&subject=25013496&status=approved&fields%5Bname-first%5D%5Btype%5D=string&fields%5Bname-first%5D%5Bvalue%5D=&fields%5Bname-middle%5D%5Btype%5D=string&fields%5Bname-middle%5D%5Bvalue%5D=&fields%5Bname-last%5D%5Btype%5D=string&fields%5Bname-last%5D%5Bvalue%5D=&fields%5Baddress-street-1%5D%5Btype%5D=string&fields%5Baddress-street-1%5D%5Bvalue%5D=&fields%5Baddress-street-2%5D%5Btype%5D=string&fields%5Baddress-street-2%5D%5Bvalue%5D=&fields%5Baddress-city%5D%5Btype%5D=string&fields%5Baddress-city%5D%5Bvalue%5D=&fields%5Baddress-subdivision%5D%5Btype%5D=string&fields%5Baddress-subdivision%5D%5Bvalue%5D=&fields%5Baddress-postal-code%5D%5Btype%5D=string&fields%5Baddress-postal-code%5D%5Bvalue%5D=&fields%5Baddress-country-code%5D%5Btype%5D=string&fields%5Baddress-country-code%5D%5Bvalue%5D=&fields%5Bbirthdate%5D%5Btype%5D=date&fields%5Bbirthdate%5D%5Bvalue%5D=&fields%5Bemail-address%5D%5Btype%5D=string&fields%5Bemail-address%5D%5Bvalue%5D=&fields%5Bphone-number%5D%5Btype%5D=string&fields%5Bphone-number%5D%5Bvalue%5D=%2B18043320874&fields%5Bidentification-number%5D%5Btype%5D=string&fields%5Bidentification-number%5D%5Bvalue%5D=&fields%5Bidentification-class%5D%5Btype%5D=string&fields%5Bidentification-class%5D%5Bvalue%5D=&fields%5Bselected-country-code%5D%5Btype%5D=string&fields%5Bselected-country-code%5D%5Bvalue%5D=US&fields%5Bphone%5D%5Btype%5D=string&fields%5Bphone%5D%5Bvalue%5D=&select=WNCAATourneySeeds.csv)   |
 
-Bias Identification:
+**Bias Identification:**
 
 Several forms of bias may affect this dataset. First, there is omitted variable bias, because important predictors of game outcomes such as injuries, roster changes, coaching decisions, travel fatigue, and matchup-specific tactics are not included. Second, there is selection bias, since the prediction target is based only on tournament games, which include stronger teams than the full population of NCAA teams. Third, there is aggregation bias, because regular season performance is summarized into averages and win percentage, which may hide game-to-game variability and differences in opponent strength.
 
 There is also potential historical bias because data from different seasons may reflect changes in team quality, play style, or broader trends in women’s college basketball. As a result, patterns learned from past seasons may not transfer perfectly to later seasons.
 
-Bias Mitigation:
+**Bias Mitigation:**
 
-I addressed bias in several ways. To reduce data leakage, I constructed features only from regular season data and used tournament outcomes only as the target variable. This ensures that the model is predicting games using information that would actually be available before the tournament game is played. I also used difference-based features such as ScoreDiff, WinPctDiff, and SeedDiff, which help normalize team comparisons and focus the model on relative strength rather than absolute values.
 
-To reduce the risk of overfitting and improve generalizability, I split the data into training and testing sets so that model performance is evaluated on unseen data. I also compared a simpler interpretable model, logistic regression, with a more flexible model, random forest, to see whether more complexity meaningfully improved performance. Finally, I interpret the model outputs as probabilistic estimates rather than definitive predictions, which helps account for the uncertainty and incompleteness of the available data.
-
-Rational for Critical Decisions:
-
-One critical decision was defining the unit of analysis as a single tournament game matchup, because that directly matches the prediction task. Another important decision was building features from regular season performance only. This was necessary because using final tournament game statistics would introduce data leakage and make the predictions unrealistic.
-
-I also chose to represent each game twice, once from each team’s perspective, so that the target variable Win becomes a balanced binary outcome. This makes the classification setup cleaner and avoids having the model learn from an imbalanced winner-only structure. Another key judgment call was engineering difference-based features instead of using only separate team statistics. I chose this because relative differences in scoring, win percentage, and seeding better reflect the competitive relationship between two teams and are easier for the model to interpret.
-
-Finally, I selected logistic regression as the baseline model because it is simple, interpretable, and appropriate for binary classification. I also included random forest as a comparison model to test whether a more flexible nonlinear model would improve performance. In this case, logistic regression performed slightly better, which supports keeping the simpler model as the preferred choice.
+**Rational for Critical Decisions:**
 
 ## Metadata
-Schema: 
+**Schema:** 
+![image.png](<img width="378" height="378" alt="image" src="https://github.com/user-attachments/assets/bffcdd52-2f48-4653-a06c-ea175e77adb3" />)
 
-Data:
+**Data:**
 
-Data Dictionary:
+| Table Name     | Description                                                                                                                                | Link                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| NCAA_Game_Data | Final game-level modeling dataset containing tournament matchups, merged regular season team features, and engineered difference variables | [Generated in notebook / exported CSV](https://drive.google.com/file/d/1STwlRCdWWx-Uyg34DcEQGQKepDIG_AKQ/view?usp=sharing) |
 
-Data Dictionary Quantificatiopn of Uncertainty:
+**Data Dictionary:**
+
+| Name       | Data Type     | Description                                     | Example |
+| ---------- | ------------- | ----------------------------------------------- | ------- |
+| Season     | integer       | NCAA season year                                | 2022    |
+| Team1      | integer       | Team ID for the first team in the matchup       | 3101    |
+| Team2      | integer       | Team ID for the second team in the matchup      | 3376    |
+| AvgScore_1 | float         | Team1 average regular season score              | 74.3    |
+| AvgScore_2 | float         | Team2 average regular season score              | 68.9    |
+| Wins_1     | float/integer | Number of Team1 regular season wins             | 24      |
+| Losses_1   | float/integer | Number of Team1 regular season losses           | 6       |
+| Games_1    | float/integer | Number of Team1 regular season games            | 30      |
+| WinPct_1   | float         | Team1 regular season win percentage             | 0.800   |
+| SeedNum_1  | float/integer | Team1 numeric NCAA tournament seed              | 3       |
+| Wins_2     | float/integer | Number of Team2 regular season wins             | 20      |
+| Losses_2   | float/integer | Number of Team2 regular season losses           | 10      |
+| Games_2    | float/integer | Number of Team2 regular season games            | 30      |
+| WinPct_2   | float         | Team2 regular season win percentage             | 0.667   |
+| SeedNum_2  | float/integer | Team2 numeric NCAA tournament seed              | 8       |
+| ScoreDiff  | float         | Difference in average score: Team1 minus Team2  | 5.4     |
+| WinPctDiff | float         | Difference in win percentage: Team1 minus Team2 | 0.133   |
+| SeedDiff   | float         | Difference in seed number: Team1 minus Team2    | -5      |
+| Win        | binary        | Target variable: 1 if Team1 wins, 0 otherwise   | 1       |
+
+**Data Dictionary Quantificatiopn of Uncertainty:**
+
+| Feature                 | Uncertainty                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| AvgScore_1 / AvgScore_2 | Moderate uncertainty; averages summarize many games and may hide variation due to opponent strength or game context  |
+| Wins / Losses / Games   | Low uncertainty; directly counted from recorded regular season results                                               |
+| WinPct_1 / WinPct_2     | Moderate uncertainty; reliable as a summary, but influenced by schedule difficulty and conference strength           |
+| SeedNum_1 / SeedNum_2   | Low uncertainty; directly derived from official tournament seed assignments                                          |
+| ScoreDiff               | Moderate uncertainty; derived from average scoring and therefore sensitive to the uncertainty in average score       |
+| WinPctDiff              | Moderate uncertainty; derived from win percentages and reflects summary-level rather than game-specific team quality |
+| SeedDiff                | Low uncertainty; derived from official seed values                                                                   |
+| Win                     | Low uncertainty; directly based on recorded tournament game outcomes                                                 |
+

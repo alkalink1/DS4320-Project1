@@ -39,13 +39,31 @@ Predicting sports game outcomes is an important application of sports analytics.
 Headline of Press Release: Link
 
 ## Domain Exposition
-Terminology:
+**Terminology:**
 
-Domain:
+| Term                 | Definition                                                                          |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| Sports Analytics     | The use of data analysis and statistics to evaluate sports performance and outcomes |
+| Win Probability      | The estimated likelihood that a team will win a game                                |
+| Point Differential   | The difference between points scored and points allowed in a game                   |
+| Home Court Advantage | The performance advantage teams often have when playing at home                     |
+| Seed                 | A ranking assigned to teams in tournament brackets                                  |
+| Predictive Model     | A statistical or machine learning model used to estimate future outcomes            |
 
-Background Reading: 
+**Domain:**
 
-Table of Readings: 
+This project operates within the field of sports analytics, which focuses on using data to better understand athletic performance and predict future outcomes. In college basketball, large amounts of historical data are available describing game results, team statistics, and tournament performance. Analysts use these datasets to evaluate team strength, identify performance trends, and estimate the probability that a team will win a future game. Predictive modeling is widely used in this domain, especially during the NCAA tournament, where analysts and fans attempt to forecast game results and complete tournament brackets. By analyzing historical NCAA basketball game data, this project explores how statistical patterns in past games can help predict the outcomes of future matchups.
+
+[**Background Reading:**](https://drive.google.com/drive/folders/1uIVhi2nscfBkFiEnZXBqhxjzBJeIWFBy?usp=sharing)
+
+**Table of Readings:** 
+| Title                                                                                     | Description                                                                                                              | File                                                                 |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| Kaggle March Machine Learning Mania Dataset                                               | Documentation describing the NCAA basketball dataset used for predictive modeling and tournament prediction competitions | [background_readings_project1/kaggle_march_madness_dataset.pdf](https://drive.google.com/file/d/1b9lw80sFDcaqD7TuA-itF2NnWwpOfKjq/view?usp=drive_link)        |
+| A Logistic Regression/Markov Chain Model for NCAA Basketball                              | Research paper describing statistical models used to predict NCAA basketball game outcomes                               | [background_readings_project1/logistic_regression_markov_ncaa.pdf](https://drive.google.com/file/d/1y0sWrT43Ezqr3bvy_Eddx54V8BEqlAGn/view?usp=drive_link)     |
+| The Application of Machine Learning Techniques for Predicting Match Results in Team Sport | Review paper explaining how machine learning models can be used to predict sports game outcomes                          | [background_readings_project1/machine_learning_sports_prediction.pdf](https://drive.google.com/file/d/1VWt1oPQMV6vFhjL5b17pXxAfFlGmIav9/view?usp=drive_link)  |
+| On the Probability of Winning a Basketball Game                                           | Statistical analysis exploring how scoring patterns affect the probability of winning a basketball game                  | [background_readings_project1/probability_winning_basketball_game.pdf](https://drive.google.com/file/d/1zU2PHtqTUuvr7VY-M89YIaFP79KtrjYZ/view?usp=drive_link) |
+| Predictive Modeling for Sports and Gaming                                                 | Research discussing how predictive models can be applied to sports analytics and outcome prediction                      | [background_readings_project1/predictive_modeling_sports.pdf](https://drive.google.com/file/d/1x0_EWUczu5PdY3qGLZRtyVxJ6UrztJGW/view?usp=drive_link)          |
 
 ## Data Creation
 

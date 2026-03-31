@@ -54,7 +54,7 @@ Predicting sports game outcomes is an important application of sports analytics.
 
 This project operates within the field of sports analytics, which focuses on using data to better understand athletic performance and predict future outcomes. In college basketball, large amounts of historical data are available describing game results, team statistics, and tournament performance. Analysts use these datasets to evaluate team strength, identify performance trends, and estimate the probability that a team will win a future game. Predictive modeling is widely used in this domain, especially during the NCAA tournament, where analysts and fans attempt to forecast game results and complete tournament brackets. By analyzing historical NCAA basketball game data, this project explores how statistical patterns in past games can help predict the outcomes of future matchups.
 
-[**Background Reading**](https://myuva-my.sharepoint.com/:f:/g/personal/eju2pk_virginia_edu/IgDPtUFJxc8aSbEX77RQAcMQAfx3tmhBEDm67SGjhpOz4pI?e=Nffql1)
+[Background Reading](https://myuva-my.sharepoint.com/:f:/g/personal/eju2pk_virginia_edu/IgDPtUFJxc8aSbEX77RQAcMQAfx3tmhBEDm67SGjhpOz4pI?e=Nffql1)
 
 **Table of Readings:** 
 | Title                                                                                     | Description                                                                                                              | File                                                                 |
@@ -104,7 +104,13 @@ These decisions were made to balance data completeness, interpretability, and mo
 ## Metadata
 **Schema:** 
 
+![ERD](/pipeline/project1_pipeline_files/erd.png)
 
+The dataset is organized using a relational schema consisting of four tables: teams, seasons, regular_season_team_stats, and tournament_games.
+
+The `teams` table stores team identifiers and names, while the `seasons` table defines the time dimension of the dataset. The `regular_season_team_stats` table contains aggregated performance metrics for each team within a season, including scoring, wins, and win percentage. The `tournament_games` table represents matchup-level data, where each row corresponds to a single NCAA tournament game.
+
+Relationships are defined through shared keys. Each team appears in multiple records across both the regular season and tournament tables, and each season links performance and game outcomes. The relational structure enables efficient joins using DuckDB, allowing the pipeline to combine team performance and tournament data into a final modeling dataset.
 
 **Data:**
 

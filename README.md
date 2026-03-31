@@ -8,11 +8,11 @@ Alka Link - eju2pk
 
 DOI
 
-[Press Release] Link
+[Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release)
 
-[Data] Link
+[Data](https://github.com/alkalink1/databydesignproject1/tree/main/data)
 
-[Pipeline] Link
+[Pipeline](https://github.com/alkalink1/databydesignproject1/tree/main/pipeline)
 
 [MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE)
 
@@ -54,16 +54,16 @@ Headline of Press Release: Link
 
 This project operates within the field of sports analytics, which focuses on using data to better understand athletic performance and predict future outcomes. In college basketball, large amounts of historical data are available describing game results, team statistics, and tournament performance. Analysts use these datasets to evaluate team strength, identify performance trends, and estimate the probability that a team will win a future game. Predictive modeling is widely used in this domain, especially during the NCAA tournament, where analysts and fans attempt to forecast game results and complete tournament brackets. By analyzing historical NCAA basketball game data, this project explores how statistical patterns in past games can help predict the outcomes of future matchups.
 
-[**Background Reading**](https://drive.google.com/drive/folders/1uIVhi2nscfBkFiEnZXBqhxjzBJeIWFBy?usp=sharing)
+[**Background Reading**](https://myuva-my.sharepoint.com/:f:/g/personal/eju2pk_virginia_edu/IgDPtUFJxc8aSbEX77RQAcMQAfx3tmhBEDm67SGjhpOz4pI?e=Nffql1)
 
 **Table of Readings:** 
 | Title                                                                                     | Description                                                                                                              | File                                                                 |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| Kaggle March Machine Learning Mania Dataset                                               | Documentation describing the NCAA basketball dataset used for predictive modeling and tournament prediction competitions | [background_readings_project1/kaggle_march_madness_dataset.pdf](https://drive.google.com/file/d/1b9lw80sFDcaqD7TuA-itF2NnWwpOfKjq/view?usp=drive_link)        |
-| A Logistic Regression/Markov Chain Model for NCAA Basketball                              | Research paper describing statistical models used to predict NCAA basketball game outcomes                               | [background_readings_project1/logistic_regression_markov_ncaa.pdf](https://drive.google.com/file/d/1y0sWrT43Ezqr3bvy_Eddx54V8BEqlAGn/view?usp=drive_link)     |
-| The Application of Machine Learning Techniques for Predicting Match Results in Team Sport | Review paper explaining how machine learning models can be used to predict sports game outcomes                          | [background_readings_project1/machine_learning_sports_prediction.pdf](https://drive.google.com/file/d/1VWt1oPQMV6vFhjL5b17pXxAfFlGmIav9/view?usp=drive_link)  |
-| On the Probability of Winning a Basketball Game                                           | Statistical analysis exploring how scoring patterns affect the probability of winning a basketball game                  | [background_readings_project1/probability_winning_basketball_game.pdf](https://drive.google.com/file/d/1zU2PHtqTUuvr7VY-M89YIaFP79KtrjYZ/view?usp=drive_link) |
-| Predictive Modeling for Sports and Gaming                                                 | Research discussing how predictive models can be applied to sports analytics and outcome prediction                      | [background_readings_project1/predictive_modeling_sports.pdf](https://drive.google.com/file/d/1x0_EWUczu5PdY3qGLZRtyVxJ6UrztJGW/view?usp=drive_link)          |
+| Kaggle March Machine Learning Mania Dataset                                               | Documentation describing the NCAA basketball dataset used for predictive modeling and tournament prediction competitions | [background_readings_project1/kaggle_march_madness_dataset.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQC81MKhNI1sTrOm6tvceWM-ARoTXA7st7AAWRBFywn1B8g?e=CNjn5V)        |
+| A Logistic Regression/Markov Chain Model for NCAA Basketball                              | Research paper describing statistical models used to predict NCAA basketball game outcomes                               | [background_readings_project1/logistic_regression_markov_ncaa.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQB3ooTxn0vUTJ7wbZHcskYsAZbG2mm6p7M9hIhCXCPV3VY?e=pHsvmG)     |
+| The Application of Machine Learning Techniques for Predicting Match Results in Team Sport | Review paper explaining how machine learning models can be used to predict sports game outcomes                          | [background_readings_project1/machine_learning_sports_prediction.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQA2vQEbtPTXQ4a8uwa6Qoz9Aa54SZL-q-Vua-6uVtniptw?e=vWa8g5)  |
+| On the Probability of Winning a Basketball Game                                           | Statistical analysis exploring how scoring patterns affect the probability of winning a basketball game                  | [background_readings_project1/probability_winning_basketball_game.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDeF4dSHjT5RIaRR98__yUfAWwNBEtLpsykEeoIdRu5lQQ?e=AzcNEU) |
+| Predictive Modeling for Sports and Gaming                                                 | Research discussing how predictive models can be applied to sports analytics and outcome prediction                      | [background_readings_project1/predictive_modeling_sports.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDe69u4wMeRQrORB3UWLA23Afbi91SI_PMaPSE6DBrigEs?e=p2iEm8)          |
 
 ## Data Creation
 

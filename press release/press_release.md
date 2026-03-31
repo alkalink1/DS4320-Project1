@@ -35,7 +35,6 @@ The results suggest that:
 - Higher seeds (stronger rankings) matter a lot  
 - Performance differences between teams are strong predictors  
 
----
 
 ## What the Data Shows
 

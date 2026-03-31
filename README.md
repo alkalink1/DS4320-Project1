@@ -122,32 +122,72 @@ Relationships are defined through shared keys. Each team appears in multiple rec
 
 **Data Dictionary:**
 
-| Name | Data Type | Description | Example |
-|------|----------|------------|---------|
-| TeamID | integer | Unique team identifier | 3124 |
-| TeamName | string | Name of the team | South Carolina |
-| Season | integer | NCAA season year | 2023 |
-| AvgScore | float | Average points scored per game | 74.5 |
-| GamesPlayed | integer | Number of games played | 31 |
-| Wins | integer | Number of wins | 27 |
-| Losses | integer | Number of losses | 4 |
-| WinPct | float | Win percentage | 0.871 |
-| GameID | integer | Unique game identifier | 1 |
-| Team1ID | integer | First team in matchup | 3124 |
-| Team2ID | integer | Second team in matchup | 3177 |
-| Team1Seed | integer | Tournament seed for Team 1 | 1 |
-| Team2Seed | integer | Tournament seed for Team 2 | 8 |
-| Team1Win | integer | Outcome variable (1 = win, 0 = loss) | 1 |
+teams
+| Name     | Type   | Description                          | Example        |
+| -------- | ------ | ------------------------------------ | -------------- |
+| TeamID   | int    | Unique team identifier (primary key) | 3124           |
+| TeamName | string | Official team name                   | South Carolina |
+
+seasons
+| Name   | Type | Description                    | Example |
+| ------ | ---- | ------------------------------ | ------- |
+| Season | int  | NCAA season year (primary key) | 2023    |
+
+regular_season_team_stats
+| Name        | Type  | Description                         | Example |
+| ----------- | ----- | ----------------------------------- | ------- |
+| Season      | int   | Season identifier (FK → seasons)    | 2023    |
+| TeamID      | int   | Team identifier (FK → teams)        | 3124    |
+| AvgScore    | float | Average points scored per game      | 74.5    |
+| GamesPlayed | int   | Total games played in season        | 31      |
+| Wins        | int   | Number of wins                      | 27      |
+| Losses      | int   | Number of losses                    | 4       |
+| WinPct      | float | Win percentage (Wins / GamesPlayed) | 0.871   |
+
+tournament_games
+| Name      | Type | Description                                 | Example |
+| --------- | ---- | ------------------------------------------- | ------- |
+| GameID    | int  | Unique game identifier (primary key)        | 1       |
+| Season    | int  | Season identifier (FK → seasons)            | 2023    |
+| Team1ID   | int  | First team in matchup (FK → teams)          | 3124    |
+| Team2ID   | int  | Second team in matchup (FK → teams)         | 3177    |
+| Team1Seed | int  | Tournament seed for Team 1                  | 1       |
+| Team2Seed | int  | Tournament seed for Team 2                  | 8       |
+| Team1Win  | int  | Outcome variable (1 = Team1 wins, 0 = loss) | 1       |
+
+final_model_dataset
+| Name          | Type  | Description                         | Example |
+| ------------- | ----- | ----------------------------------- | ------- |
+| GameID        | int   | Unique game identifier              | 1       |
+| Season        | int   | Season identifier                   | 2023    |
+| Team1ID       | int   | First team ID                       | 3124    |
+| Team2ID       | int   | Second team ID                      | 3177    |
+| Team1Seed     | int   | Seed of Team 1                      | 1       |
+| Team2Seed     | int   | Seed of Team 2                      | 8       |
+| Team1AvgScore | float | Avg score of Team 1                 | 75.2    |
+| Team2AvgScore | float | Avg score of Team 2                 | 68.4    |
+| Team1WinPct   | float | Win % of Team 1                     | 0.85    |
+| Team2WinPct   | float | Win % of Team 2                     | 0.72    |
+| ScoreDiff     | float | Team1AvgScore − Team2AvgScore       | 6.8     |
+| WinPctDiff    | float | Team1WinPct − Team2WinPct           | 0.13    |
+| SeedDiff      | int   | Team2Seed − Team1Seed               | 7       |
+| Team1Win      | int   | Target variable (1 = win, 0 = loss) | 1       |
+
 
 **Data Dictionary Quantification of Uncertainty:**
+| Feature                       | Uncertainty Level | Explanation                                             |
+| ----------------------------- | ----------------- | ------------------------------------------------------- |
+| AvgScore                      | Moderate          | Varies by opponent strength and game context            |
+| GamesPlayed                   | Low               | Direct count, no estimation                             |
+| Wins / Losses                 | Low               | Observed outcomes                                       |
+| WinPct                        | Moderate          | Affected by strength of schedule and variance           |
+| Team1Seed / Team2Seed         | Low–Moderate      | Official rankings but include human bias                |
+| Team1AvgScore / Team2AvgScore | Moderate          | Season averages hide game-level variation               |
+| Team1WinPct / Team2WinPct     | Moderate          | Same limitations as WinPct                              |
+| ScoreDiff                     | Moderate          | Combines two uncertain averages                         |
+| WinPctDiff                    | Moderate          | Derived metric amplifies variance                       |
+| SeedDiff                      | Low–Moderate      | Based on seeds but relative comparison adds uncertainty |
+| Team1Win                      | Low               | Observed ground truth outcome                           |
 
-| Feature | Uncertainty |
-|--------|------------|
-| AvgScore | Moderate uncertainty due to variation in team performance across games |
-| WinPct | Moderate uncertainty due to differences in strength of schedule |
-| GamesPlayed | Low uncertainty (direct count of games) |
-| Wins / Losses | Low uncertainty (observed outcomes) |
-| Team1Seed / Team2Seed | Low uncertainty (official tournament rankings) |
-| Team1Win | Low uncertainty (observed game outcome) |
 
 Overall, the dataset has moderate uncertainty due to the absence of contextual variables such as injuries, player-level performance, and team dynamics.

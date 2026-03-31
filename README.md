@@ -77,8 +77,8 @@ The data acquisition process involved downloading CSV files from Kaggle and load
 
 | File | Description | Link |
 |------|-------------|------|
-| project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [pipeline/project1_pipeline.ipynb](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.ipynb) |
-| project1_pipeline.md | Markdown version of the full pipeline notebook | [pipeline/project1_pipeline.md](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.md) |
+| project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [pipeline/project1_pipeline.ipynb](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.ipynb) |
+| project1_pipeline.md | Markdown version of the full pipeline notebook | [pipeline/project1_pipeline.md](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.md) |
 
 **Bias Identification:**
 

@@ -4,17 +4,15 @@
 
 This project predicts outcomes of women’s NCAA tournament basketball games using regular season performance metrics and tournament seeding. By combining historical game data with engineered features such as scoring differentials and win percentage, the model identifies key factors that influence tournament success. The goal is to demonstrate how data-driven insights can support competitive strategy and decision-making in sports.
 
-Alka Link - eju2pk
+**Alka Link - eju2pk**
 
-[DOI: 10.5281/zenodo.19342879](https://doi.org/10.5281/zenodo.19342879)
-
-[Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release)
-
-[Data](https://github.com/alkalink1/databydesignproject1/tree/main/data)
-
-[Pipeline](https://github.com/alkalink1/databydesignproject1/tree/main/pipeline)
-
-[MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE)
+| Links |
+|-------|
+| [DOI](https://doi.org/10.5281/zenodo.19342879) |
+| [Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release) |
+| [Data](https://github.com/alkalink1/databydesignproject1/tree/main/data) |
+| [Pipeline](https://github.com/alkalink1/databydesignproject1/tree/main/pipeline) |
+| [MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE) |
 
 ## Problem Definition
 **General Problem:**

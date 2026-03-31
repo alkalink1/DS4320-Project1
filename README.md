@@ -79,7 +79,6 @@ The data acquisition process involved downloading CSV files from Kaggle and load
 |------|-------------|------|
 | project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [pipeline/project1_pipeline.ipynb](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.ipynb) |
 | project1_pipeline.md | Markdown version of the full pipeline notebook | [pipeline/project1_pipeline.md](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.md) |
-| final_model_dataset | Final modeling dataset created from SQL joins and feature engineering | [data/final_model_dataset.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/final_model_dataset.csv?d=w4cfc1d9a5819430fabf63d3b2c576f70&csf=1&web=1&e=4q82VR) |
 
 **Bias Identification:**
 
@@ -113,7 +112,8 @@ These decisions were made to balance data completeness, interpretability, and mo
 | teams | Contains team identifiers and names | [data/teams.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/teams.csv?d=w258e618ac386462790d0b371a91049ac&csf=1&web=1&e=drLWjo) |
 | seasons | Contains the list of seasons used in the dataset | [data/seasons.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/seasons.csv?d=w45d1d70fec544aaeb3d0b4d1344a9756&csf=1&web=1&e=Tf2wn1) |
 | regular_season_team_stats | Aggregated team performance metrics for each season | [data/regular_season_team_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/regular_season_team_stats.csv?d=wb26b99e14959457da7ceda7fce3319e5&csf=1&web=1&e=Syd34e)|
-| tournament_games | Tournament matchups including seeds and outcomes | [data/tournament_games.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/seasons.csv?d=w45d1d70fec544aaeb3d0b4d1344a9756&csf=1&web=1&e=Tf2wn1) |
+| tournament_games | Tournament matchups including seeds and outcomes | [data/tournament_games.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/tournament_games.csv?d=wfc86006bc3654133ba4dd997d813bcbe&csf=1&web=1&e=0wOeD2) |
+| final_model_dataset | Final modeling dataset created from SQL joins and feature engineering | [data/final_model_dataset.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/final_model_dataset.csv?d=w4cfc1d9a5819430fabf63d3b2c576f70&csf=1&web=1&e=4q82VR) |
 
 **Data Dictionary:**
 

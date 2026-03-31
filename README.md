@@ -10,7 +10,7 @@ This project predicts outcomes of women’s NCAA tournament basketball games usi
 |-------|
 | [DOI](https://doi.org/10.5281/zenodo.19342879) |
 | [Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release) |
-| [Data](https://github.com/alkalink1/databydesignproject1/tree/main/data) |
+| [Data]([https://github.com/alkalink1/databydesignproject1/tree/main/data](https://myuva-my.sharepoint.com/:f:/g/personal/eju2pk_virginia_edu/IgDeF5nA-Gn-T7l6UznITH87ARMYPEYqENMb4cyOPstwc9Y?e=oFiBZo)) |
 | [Pipeline](https://github.com/alkalink1/databydesignproject1/tree/main/pipeline) |
 | [MIT License](https://github.com/alkalink1/databydesignproject1/blob/main/LICENSE) |
 
@@ -34,7 +34,7 @@ The general problem of predicting sports game outcomes is extremely broad becaus
 Predicting sports game outcomes is an important application of sports analytics. Teams, analysts, and fans increasingly rely on statistical models to evaluate team performance and estimate the probability of winning future games. In college basketball, predictive models are widely used during the NCAA tournament, where analysts attempt to forecast game outcomes for brackets and tournament simulations. By analyzing historical game data, analysts can identify patterns that help explain why some teams perform better than others. Developing predictive models for game outcomes can provide insights into the factors that most strongly influence winning and demonstrate how data can be used to support decision-making in sports.
 
 
-[Data Model Predicts NCAA Women’s Tournament Outcomes with High Accuracy](https://github.com/alkalink1/databydesignproject1/blob/main/press%20release/press_release.md)
+[What Really Predicts Winning in March Madness?](https://github.com/alkalink1/databydesignproject1/blob/main/press%20release/press_release.md)
 
 ## Domain Exposition
 **Terminology:**
@@ -57,11 +57,11 @@ This project operates within the field of sports analytics, which focuses on usi
 **Table of Readings:** 
 | Title                                                                                     | Description                                                                                                              | File                                                                 |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| Kaggle March Machine Learning Mania Dataset                                               | Documentation describing the NCAA basketball dataset used for predictive modeling and tournament prediction competitions | [background_readings_project1/kaggle_march_madness_dataset.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQC81MKhNI1sTrOm6tvceWM-ARoTXA7st7AAWRBFywn1B8g?e=CNjn5V)        |
-| A Logistic Regression/Markov Chain Model for NCAA Basketball                              | Research paper describing statistical models used to predict NCAA basketball game outcomes                               | [background_readings_project1/logistic_regression_markov_ncaa.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQB3ooTxn0vUTJ7wbZHcskYsAZbG2mm6p7M9hIhCXCPV3VY?e=pHsvmG)     |
-| The Application of Machine Learning Techniques for Predicting Match Results in Team Sport | Review paper explaining how machine learning models can be used to predict sports game outcomes                          | [background_readings_project1/machine_learning_sports_prediction.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQA2vQEbtPTXQ4a8uwa6Qoz9Aa54SZL-q-Vua-6uVtniptw?e=vWa8g5)  |
-| On the Probability of Winning a Basketball Game                                           | Statistical analysis exploring how scoring patterns affect the probability of winning a basketball game                  | [background_readings_project1/probability_winning_basketball_game.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDeF4dSHjT5RIaRR98__yUfAWwNBEtLpsykEeoIdRu5lQQ?e=AzcNEU) |
-| Predictive Modeling for Sports and Gaming                                                 | Research discussing how predictive models can be applied to sports analytics and outcome prediction                      | [background_readings_project1/predictive_modeling_sports.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDe69u4wMeRQrORB3UWLA23Afbi91SI_PMaPSE6DBrigEs?e=p2iEm8)          |
+| Kaggle March Machine Learning Mania Dataset                                               | Documentation describing the NCAA basketball dataset used for predictive modeling and tournament prediction competitions | [kaggle_march_madness_dataset.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQC81MKhNI1sTrOm6tvceWM-ARoTXA7st7AAWRBFywn1B8g?e=CNjn5V)        |
+| A Logistic Regression/Markov Chain Model for NCAA Basketball                              | Research paper describing statistical models used to predict NCAA basketball game outcomes                               | [logistic_regression_markov_ncaa.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQB3ooTxn0vUTJ7wbZHcskYsAZbG2mm6p7M9hIhCXCPV3VY?e=pHsvmG)     |
+| The Application of Machine Learning Techniques for Predicting Match Results in Team Sport | Review paper explaining how machine learning models can be used to predict sports game outcomes                          | [machine_learning_sports_prediction.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQA2vQEbtPTXQ4a8uwa6Qoz9Aa54SZL-q-Vua-6uVtniptw?e=vWa8g5)  |
+| On the Probability of Winning a Basketball Game                                           | Statistical analysis exploring how scoring patterns affect the probability of winning a basketball game                  | [probability_winning_basketball_game.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDeF4dSHjT5RIaRR98__yUfAWwNBEtLpsykEeoIdRu5lQQ?e=AzcNEU) |
+| Predictive Modeling for Sports and Gaming                                                 | Research discussing how predictive models can be applied to sports analytics and outcome prediction                      | [predictive_modeling_sports.pdf](https://myuva-my.sharepoint.com/:b:/g/personal/eju2pk_virginia_edu/IQDe69u4wMeRQrORB3UWLA23Afbi91SI_PMaPSE6DBrigEs?e=p2iEm8)          |
 
 ## Data Creation
 
@@ -75,8 +75,8 @@ The data acquisition process involved downloading CSV files from Kaggle and load
 
 | File | Description | Link |
 |------|-------------|------|
-| project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [pipeline/project1_pipeline.ipynb](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.ipynb) |
-| project1_pipeline.md | Markdown version of the full pipeline notebook | [pipeline/project1_pipeline.md](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.md) |
+| project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [project1_pipeline.ipynb](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.ipynb) |
+| project1_pipeline.md | Markdown version of the full pipeline notebook | [project1_pipeline.md](https://github.com/alkalink1/DS4320-Project1/blob/main/pipeline/project1_pipeline.md) |
 
 **Bias Identification:**
 
@@ -114,11 +114,11 @@ Relationships are defined through shared keys. Each team appears in multiple rec
 
 | Table Name | Description | Link |
 |------------|------------|------|
-| teams | Contains team identifiers and names | [data/teams.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/teams.csv?d=w258e618ac386462790d0b371a91049ac&csf=1&web=1&e=drLWjo) |
-| seasons | Contains the list of seasons used in the dataset | [data/seasons.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/seasons.csv?d=w45d1d70fec544aaeb3d0b4d1344a9756&csf=1&web=1&e=Tf2wn1) |
-| regular_season_team_stats | Aggregated team performance metrics for each season | [data/regular_season_team_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/regular_season_team_stats.csv?d=wb26b99e14959457da7ceda7fce3319e5&csf=1&web=1&e=Syd34e)|
-| tournament_games | Tournament matchups including seeds and outcomes | [data/tournament_games.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/tournament_games.csv?d=wfc86006bc3654133ba4dd997d813bcbe&csf=1&web=1&e=0wOeD2) |
-| final_model_dataset | Final modeling dataset created from SQL joins and feature engineering | [data/final_model_dataset.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/final_model_dataset.csv?d=w4cfc1d9a5819430fabf63d3b2c576f70&csf=1&web=1&e=4q82VR) |
+| teams | Contains team identifiers and names | [teams.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/teams.csv?d=w258e618ac386462790d0b371a91049ac&csf=1&web=1&e=drLWjo) |
+| seasons | Contains the list of seasons used in the dataset | [seasons.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/seasons.csv?d=w45d1d70fec544aaeb3d0b4d1344a9756&csf=1&web=1&e=Tf2wn1) |
+| regular_season_team_stats | Aggregated team performance metrics for each season | [regular_season_team_stats.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/regular_season_team_stats.csv?d=wb26b99e14959457da7ceda7fce3319e5&csf=1&web=1&e=Syd34e)|
+| tournament_games | Tournament matchups including seeds and outcomes | [tournament_games.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/tournament_games.csv?d=wfc86006bc3654133ba4dd997d813bcbe&csf=1&web=1&e=0wOeD2) |
+| final_model_dataset | Final modeling dataset created from SQL joins and feature engineering | [final_model_dataset.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/final_model_dataset.csv?d=w4cfc1d9a5819430fabf63d3b2c576f70&csf=1&web=1&e=4q82VR) |
 
 **Data Dictionary:**
 

@@ -90,7 +90,7 @@ To mitigate these biases, the analysis uses multiple features that capture diffe
 
 Additionally, the dataset is restricted to seasons where all source data is available to avoid bias caused by missing values.
 
-**Rational for Critical Decisions:**
+**Rationale for Critical Decisions:**
 
 Several key design decisions were made in constructing the dataset:
 
@@ -103,6 +103,7 @@ These decisions were made to balance data completeness, interpretability, and mo
 
 ## Metadata
 **Schema:** 
+
 
 
 **Data:**
@@ -134,7 +135,7 @@ These decisions were made to balance data completeness, interpretability, and mo
 | Team2Seed | integer | Tournament seed for Team 2 | 8 |
 | Team1Win | integer | Outcome variable (1 = win, 0 = loss) | 1 |
 
-**Data Dictionary Quantificatiopn of Uncertainty:**
+**Data Dictionary Quantification of Uncertainty:**
 
 | Feature | Uncertainty |
 |--------|------------|

@@ -1,37 +1,63 @@
-# Data Model Predicts NCAA Women’s Tournament Outcomes with High Accuracy
+# What Really Predicts Winning in March Madness?
+
+## A simple data model shows that a few key stats can explain most game outcomes
 
 ## Hook
 
-Can a simple data model outperform complex machine learning in predicting NCAA tournament games? New analysis shows that just a few key performance metrics can reliably predict game outcomes.
+What actually determines who wins in the NCAA women’s basketball tournament? Is it rankings, performance, or just luck?
+
+This project shows that a few simple factors can go a long way in predicting game outcomes.
+
+## The Problem
+
+Every year, fans try to predict March Madness results — and usually get it wrong. Even experts struggle to consistently pick winners in a single-elimination tournament where anything can happen.
+
+The question is: can we do better using data?
+
+## The Approach
+
+This project looked at historical NCAA women’s basketball data and focused on three key factors:
+
+- How much better one team scores than another  
+- How often each team wins  
+- Each team’s tournament seed  
+
+Using these, we built a model to estimate the chances that one team will beat another.
+
+## What We Found
+
+A simple model was able to correctly identify winning teams much better than random guessing.
+
+Surprisingly, a basic approach worked better than a more complex one — showing that you don’t need complicated algorithms to understand what drives winning.
+
+The results suggest that:
+- Better teams (higher win rates) tend to win  
+- Higher seeds (stronger rankings) matter a lot  
+- Performance differences between teams are strong predictors  
+
+---
+
+## What the Data Shows
+
+![Seed vs Win Probability](../project1_pipeline_files/seed_vs_winprob.png)
+
+As the difference in seed between two teams increases, the higher-ranked team becomes much more likely to win.
 
 
-## Problem Statement
+## Why This Matters
 
-Predicting outcomes in NCAA basketball tournaments is challenging due to the high variability and pressure of single-elimination games. Fans and analysts often rely on rankings, intuition, or expert opinions, but these approaches lack consistency and transparency.
+This project shows that predicting tournament outcomes doesn’t require complicated models or insider knowledge.
 
-This project addresses the problem of predicting NCAA women’s basketball tournament outcomes using historical data. Specifically, it evaluates whether regular-season performance and tournament seeding can be used to accurately predict which team will win a matchup.
+A few simple, easy-to-understand factors can explain most of what happens on the court.
 
-## Solution Description
+For fans, analysts, and teams, this means:
+- Better bracket predictions  
+- Clearer understanding of team strength  
+- More confidence in data-driven decisions  
 
-This project builds a data pipeline that transforms raw NCAA data into a structured relational dataset and applies machine learning models to predict tournament outcomes.
 
-Key features include:
-- Score differential between teams  
-- Win percentage difference  
-- Tournament seed rankings  
+## Looking Ahead
 
-Two models were tested: logistic regression and random forest. The logistic regression model achieved an AUC of **0.828**, outperforming the more complex random forest model (AUC **0.807**).
+Future work could include more detailed data like player performance, injuries, and game location to improve predictions even further.
 
-These results demonstrate that simple, interpretable features are highly effective predictors of tournament success and do not require complex modeling techniques.
-
-## Chart
-
-![ROC Curve](../pipeline/project1_pipeline_files/roc_curve_comparison.png)
-
-The ROC curve shows that logistic regression consistently outperforms random forest across classification thresholds, indicating stronger overall predictive performance.
-
-## Why It Matters
-
-This project highlights the power of interpretable data science. Rather than relying on complex models, analysts can use a small number of meaningful features to understand and predict tournament outcomes.
-
-These findings are useful for sports analysts, teams, and fans seeking a more data-driven approach to understanding competitive performance.
+But even with basic information, the results show that data can take a lot of the guesswork out of March Madness.

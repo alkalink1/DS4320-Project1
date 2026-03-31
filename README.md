@@ -6,7 +6,7 @@ This project predicts outcomes of women’s NCAA tournament basketball games usi
 
 Alka Link - eju2pk
 
-DOI
+[DOI: 10.5281/zenodo.19342879](https://doi.org/10.5281/zenodo.19342879)
 
 [Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release)
 

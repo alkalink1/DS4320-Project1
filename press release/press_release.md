@@ -38,7 +38,7 @@ The results suggest that:
 
 ## What the Data Shows
 
-![Seed vs Win Probability](../project1_pipeline_files/seed_vs_winprob.png)
+![Seed vs Win Probability](../pipeline/project1_pipeline_files/seed_vs_winprob.png)
 
 As the difference in seed between two teams increases, the higher-ranked team becomes much more likely to win.
 

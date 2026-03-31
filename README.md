@@ -8,7 +8,7 @@ This project predicts outcomes of women’s NCAA tournament basketball games usi
 
 | Links |
 |-------|
-| [DOI](https://doi.org/10.5281/zenodo.19342879) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342879.svg)](https://doi.org/10.5281/zenodo.19342879) |
+| [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342879.svg)](https://doi.org/10.5281/zenodo.19342879) |
 | [Press Release](https://github.com/alkalink1/databydesignproject1/tree/main/press%20release) |
 | [Data](https://myuva-my.sharepoint.com/:f:/g/personal/eju2pk_virginia_edu/IgDeF5nA-Gn-T7l6UznITH87ARMYPEYqENMb4cyOPstwc9Y?e=oFiBZo) |
 | [Pipeline](https://github.com/alkalink1/databydesignproject1/tree/main/pipeline) |

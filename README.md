@@ -36,7 +36,7 @@ The general problem of predicting sports game outcomes is extremely broad becaus
 Predicting sports game outcomes is an important application of sports analytics. Teams, analysts, and fans increasingly rely on statistical models to evaluate team performance and estimate the probability of winning future games. In college basketball, predictive models are widely used during the NCAA tournament, where analysts attempt to forecast game outcomes for brackets and tournament simulations. By analyzing historical game data, analysts can identify patterns that help explain why some teams perform better than others. Developing predictive models for game outcomes can provide insights into the factors that most strongly influence winning and demonstrate how data can be used to support decision-making in sports.
 
 
-Headline of Press Release: Link
+[Data Model Predicts NCAA Women’s Tournament Outcomes with High Accuracy](https://github.com/alkalink1/databydesignproject1/blob/main/press%20release/press_release.md)
 
 ## Domain Exposition
 **Terminology:**
@@ -79,7 +79,6 @@ The data acquisition process involved downloading CSV files from Kaggle and load
 |------|-------------|------|
 | project1_pipeline.ipynb | Loads raw data, validates structure, constructs relational tables, and performs feature engineering | [pipeline/project1_pipeline.ipynb](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.ipynb) |
 | project1_pipeline.md | Markdown version of the full pipeline notebook | [pipeline/project1_pipeline.md](https://github.com/alkalink1/databydesignproject1/blob/main/pipeline/problemsolutionpipeline.md) |
-| project1_pipeline.log | Log file recording pipeline execution steps and errors | pipeline/project1_pipeline.log |
 | final_model_dataset | Final modeling dataset created from SQL joins and feature engineering | [data/final_model_dataset.csv](https://myuva-my.sharepoint.com/:x:/r/personal/eju2pk_virginia_edu/Documents/ds4320project1/data/final_model_dataset.csv?d=w4cfc1d9a5819430fabf63d3b2c576f70&csf=1&web=1&e=4q82VR) |
 
 **Bias Identification:**
